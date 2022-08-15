@@ -8,5 +8,5 @@ def categories(request):
     res = requests.get("https://jsonplaceholder.typicode.com/users")
     # return HttpResponse(res.json())
 
-    template = loader.get_template('index.html')
+    template = loader.get_template('categories.html')
     return HttpResponse(template.render())
