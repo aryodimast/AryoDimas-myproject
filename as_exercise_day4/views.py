@@ -7,6 +7,4 @@ import requests
 def categories(request):
     res = requests.get("https://jsonplaceholder.typicode.com/users")
     # return HttpResponse(res.json())
-
-    template = loader.get_template('categories.html')
-    return HttpResponse(template.render())
+    return render(request, 'as_exercise_day4/templates/categories.html')
