@@ -5,5 +5,5 @@ import requests
 def index(request):
     res = requests.get("https://jsonplaceholder.typicode.com/users")
     print(res.json())
-    return render(request, 'index.html', {'res': res})
+    return render(request, 'as_exercise_day4/templates/index.html', {'res': res})
     # return render(request, 'landingpage/templates/index.html', {'users': res})
