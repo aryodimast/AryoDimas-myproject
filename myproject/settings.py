@@ -34,13 +34,13 @@ STATIC_URL = '/static/'
 
 INSTALLED_APPS = [
     'landingpage.apps.LandingpageConfig',
+    'as_exercise_day4.apps.AsExerciseDay4Config',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'as_exercise_day4'
 ]
 
 MIDDLEWARE = [
